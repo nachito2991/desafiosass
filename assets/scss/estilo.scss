@@ -22,7 +22,7 @@ a{ text-decoration: none;
 
 
 
-    @media (max-width: 500px) {
+    @media (max-width: 760px) {
 
       h3 {
         font-family: 'Oswald', sans-serif;
@@ -31,3 +31,11 @@ a{ text-decoration: none;
 
     }
     
+    .contenedor-cotacto{
+
+      height: 350px;
+    }
+
+    .vuelta-menu{
+      text-align: center;
+    }
