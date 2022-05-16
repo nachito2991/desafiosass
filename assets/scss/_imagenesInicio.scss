@@ -1,11 +1,30 @@
-.imagen-inicio {
-  
-    background: #7ed9cb;
-    background: radial-gradient(circle, #7ed9cb -26%, #5ecad2 1%, #5ed2aa 79%);
-  }
-  .imagen-inicio img {
-    width: 450px;
-    height: 450px;
+
+  .imagenes-inicio {
+    width: 500px;
+    height: 500px;
     border-radius: 25px;
-    padding: 10px;
+    padding-left: 15px;
+    img {
+  margin: 15px;
+  border-radius: 10px;
   }
+ }
+
+ .imagenes-inicio :hover   { 
+  transform: scale( 1.1);
+  transition-duration: 1s;
+  
+}
+
+
+
+@media (max-width: 500px) {
+.imagenes-inicio {
+  width: 380px;
+  height: auto;
+  border-radius: 25px;
+  margin-left: 50px;
+  flex-direction: column;
+  
+}
+}

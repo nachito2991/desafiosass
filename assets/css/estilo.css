@@ -2,9 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: 'Oswald', sans-serif;
-  text-align: center;
+          box-sizing: border-box;
 }
 
 a {
@@ -12,11 +10,42 @@ a {
   color: black;
 }
 
-.titulo-pagina, header {
-  width: 100%;
-  height: 150px;
-  background: #2fd9af;
-  background: linear-gradient(302deg, #2fd9af -26%, #7ed9cb 96%);
+header {
+  height: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: cover;
+}
+
+header h1 {
+  font-size: 100px;
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  text-align: center;
+  padding: 5px;
+}
+
+header h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 55px;
+  color: #59c1b1;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  header {
+    height: 400px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
 }
 
 .navbar-brand {
@@ -39,95 +68,18 @@ nav {
   width: auto;
 }
 
-.nav-item .nav-link:hover {
+.nav-link:hover {
   background-color: aquamarine;
   border-style: solid;
   color: black;
 }
 
-.nav-item .logo {
+.logo {
   font-size: 40px;
 }
 
-.titulo-pagina, header {
-  width: auto;
-  height: 180px;
-}
-
-.titulo-pagina h1, header h1 {
-  font-size: 80px;
-  font-family: 'Oswald', sans-serif;
-  color: black;
-  text-align: center;
-  padding: 5px;
-}
-
-.titulo-pagina .titulosh2, header .titulosh2 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 50%;
-  font-size: large;
-  text-align: center;
-  color: black;
-}
-
-h5 {
-  font-size: 130px;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #54d4c1;
-}
-
-.titulo-pagina, header {
-  -webkit-animation-name: titulos;
-          animation-name: titulos;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-}
-
-@-webkit-keyframes titulos {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-}
-
-@keyframes titulos {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-}
-
-.imagen-inicio {
-  background: #7ed9cb;
-  background: radial-gradient(circle, #7ed9cb -26%, #5ecad2 1%, #5ed2aa 79%);
-}
-
-.imagen-inicio img {
-  width: 450px;
-  height: 450px;
-  border-radius: 25px;
-  padding: 10px;
-}
-
 .card-title {
-  font-size: 70px;
+  font-size: 60px;
   color: black;
 }
 
@@ -135,6 +87,20 @@ h5 {
   font-size: 25px;
   font-family: 'Oswald', sans-serif;
   color: black;
+}
+
+.contenedor-cotacto {
+  width: auto;
+  height: 230px;
+  text-align: center;
+}
+
+.contenedor-cotacto .cuerpo-contenedor {
+  font-size: 35px;
+}
+
+.contenedor-cotacto .card-text, .contenedor-cotacto .whatsap {
+  font-size: 25px;
 }
 
 footer {
@@ -195,10 +161,105 @@ footer .copy-right {
   height: 50px;
 }
 
-.contenedor-formulario-padre {
+@media (max-width: 500px) {
+  .redes div {
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    font-size: 16px;
+    padding: 3px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .redes img {
+    width: 35px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.imagenes-inicio {
+  width: 500px;
+  height: 500px;
+  border-radius: 25px;
+  padding-left: 15px;
+}
+
+.imagenes-inicio img {
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.imagenes-inicio :hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+@media (max-width: 500px) {
+  .imagenes-inicio {
+    width: 380px;
+    height: auto;
+    border-radius: 25px;
+    margin-left: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 45px;
+  text-align: center;
+  color: black;
+}
+
+.descripcion-producto {
+  width: 100%;
+  height: 400px;
+}
+
+.motivos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  height: 120px;
+  background-color: #59c1b1;
+  border-style: solid;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  -webkit-box-shadow: -1px -5px 14px -2px rgba(0, 0, 0, 0.75);
+          box-shadow: -1px -5px 14px -2px rgba(0, 0, 0, 0.75);
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+
+@media (max-width: 500px) {
+  p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+  }
+}
+
+.formulario-padre {
   margin-left: 250px;
   height: 500px;
-  width: 1000px;
+  width: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,30 +270,51 @@ footer .copy-right {
       -ms-flex-align: center;
           align-items: center;
   background-color: bisque;
+  -webkit-box-shadow: -1px -5px 14px -2px rgba(0, 0, 0, 0.75);
+          box-shadow: -1px -5px 14px -2px rgba(0, 0, 0, 0.75);
 }
 
-.contenedor-formulario-padre .foto-formulario {
-  background-color: bisque;
+.formulario-padre .foto-formulario {
   width: 450px;
   height: 450px;
   border-radius: 25px;
   padding: 10px;
 }
 
-.contenedor-formulario-padre .contenedor-formulario {
+.formulario-padre .formulario-hijo {
   width: 400px;
   height: 500px;
   padding-top: 40px;
 }
 
-.contenedor-formulario-padre .mensajes {
+.formulario-padre .mensajes {
   width: 400px;
   height: 100px;
   margin-top: 30px;
 }
 
-.cotenedor-mayorista img {
-  width: 700px;
-  height: 700px;
-  margin-left: 380px;
+.mas-informacion {
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .formulario-padre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 25px;
+    width: 450px;
+    height: 1100px;
+  }
+}
+
+@media (max-width: 500px) {
+  h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+  }
 }

@@ -1,0 +1,40 @@
+$colorfondo: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(222,196,176,1) 100%);
+$colorprincipal:#59c1b1; 
+$fuente:'Oswald', sans-serif;
+
+header{
+    
+    height: 200px;
+    justify-content: center;
+    background-size: cover;
+        
+    h1{
+        font-size: 100px;
+        font-family: 'Oswald', sans-serif;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 5px;
+      
+    }
+    
+    h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 55px;
+        color:$colorpricipal;
+        text-align: center;
+    
+        }
+    }
+
+    @media (max-width: 500px) {
+        header {
+            height: 400px;
+            justify-content: center;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+    }
