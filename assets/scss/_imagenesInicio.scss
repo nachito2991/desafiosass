@@ -7,24 +7,26 @@
     img {
   margin: 15px;
   border-radius: 10px;
+
   }
  }
 
  .imagenes-inicio :hover   { 
   transform: scale( 1.1);
   transition-duration: 1s;
-  
+  box-shadow: -1px -5px 14px -2px rgba(0,0,0,0.75);
 }
 
 
 
-@media (max-width: 760px) {
+@media (max-width: 425px) {
 .imagenes-inicio {
-  width: 380px;
+  width: 305px;
   height: auto;
   border-radius: 25px;
-  margin-left: 50px;
   flex-direction: column;
-  
+  align-items: center;
+  margin-top: 10px; 
+  margin-left: 45px;
 }
 }

@@ -1,6 +1,9 @@
+
+
+
 h3 {
     font-family: 'Oswald', sans-serif;
-    font-size: 45px;
+    font-size: 60px;
     text-align: center;
     color: black;
     }
@@ -29,7 +32,11 @@ h3 {
    
 
 
-    @media (max-width: 760px) {
+    @media (max-width: 425px) {
+        h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 20px;
+        }
      
         p {
             font-family: 'Oswald', sans-serif;
