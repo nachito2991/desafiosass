@@ -10,107 +10,39 @@ h3 {
 
     .descripcion-producto {
         width: 100%;
-        height: 400px;
+        height: 900px;
     }
        
     .motivos {
         display: flex;
         flex-direction: column;
         width: auto;
-        height: 120px;
+        height: 270px;
         background-color: #59c1b1; 
         border-style: solid;
-        margin: 10px;
+        margin: 30px;
         padding: 10px;
         text-align: center;
+        justify-content: center;
         box-shadow: -1px -5px 14px -2px rgba(0,0,0,0.75);
     }
     p {
         font-family: 'Oswald', sans-serif;
         font-size: 20px;
     }
-    @media (max-width: 1024px) {
 
-        .descripcion-producto {
-            width: 100%;
-            height: 400px;
+
+    .motivos:hover { 
+        transform: scale( 1.1);
+        transition-duration: 1s;
+        box-shadow: -1px -5px 14px -2px rgba(0,0,0,0.75);
+      }
+
+
+
+    @media (min-width: 768px) {
+
+        .motivos p {
+            font-size: 25px;
         }
-           
-        .motivos {
-            display: flex;
-            flex-direction: column;
-            width: auto;
-            height: 120px;
-            background-color: #59c1b1; 
-            border-style: solid;
-            margin: 10px;
-            padding: 10px;
-            text-align: center;
-            box-shadow: -1px -5px 14px -2px rgba(0,0,0,0.75);
-            }
-        p {
-            font-family: 'Oswald', sans-serif;
-            font-size: 20px;
-            }
-        }
-
-        @media (max-width: 750px) {
-            .descripcion-producto {
-                width: 100%;
-                height: 600px;
-            }
-               
-            .motivos {
-                display: flex;
-                flex-direction: column;
-                width: auto;
-                height: 150px;
-                background-color: #59c1b1; 
-                border-style: solid;
-                margin: 10px;
-                padding: 20px;
-                text-align: center;
-                box-shadow: -1px -5px 14px -2px rgba(0,0,0,0.75);
-                }
-            p {
-                font-family: 'Oswald', sans-serif;
-                font-size: 20px;
-                }
-
-
-        }
-
-
-
-
-    @media (max-width: 400px) {
-
-
-        .descripcion-producto {
-            width: 100%;
-            height: 800px;
-            margin: 15px;
-            
-        }
-           
-        .motivos {
-            display: flex;
-            flex-direction: column;
-            width: auto;
-            height: 230px;
-            background-color: #59c1b1; 
-            border-style: solid;
-            margin: 30px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: -1px -5px 14px -2px rgba(0,0,0,0.75);
-            }
-        p {
-            font-family: 'Oswald', sans-serif;
-            font-size: 16px;
-            }
-      
-
-
-
     }
