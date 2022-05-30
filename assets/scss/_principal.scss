@@ -2,12 +2,12 @@
 
 
 .contenedorTarjetas{
-  height: 1500px;
+  height: 1650px;
 
 }
 .contenedorPresentacion{
   width: auto;
-  height: 450px;
+  height: 500px;
  align-items: center;
  margin: 50px;
  box-shadow: -1px -5px 14px -2px rgba(0,0,0,0.75);
@@ -20,9 +20,8 @@
     margin-left: 25px;
     margin-bottom: 30px;
   }
-    
-    img {
-  margin: 15px;
+   .imagenes-inicio img {
+     margin: 15px;
   border-radius: 10px;
   }
   .presentacion{
@@ -46,7 +45,7 @@
 
 
   .contenedorTarjetas{
-    height: 2100px;
+    height: 2300px;
    
   }
 
@@ -54,7 +53,7 @@
     display: flex;
     display: inline-block;
     width: auto;
-    height: 600px;
+    height: 650px;
    align-items: center;
    margin: 50px;
    box-shadow: -1px -5px 14px -2px rgba(0,0,0,0.75);
@@ -71,7 +70,7 @@
     padding-left: 25px;
   }
     img {
-  margin: 15px;
+
   border-radius: 10px;
   }
 
@@ -96,8 +95,8 @@
 
 
   .contenedorTarjetas{
-    height: 900px;
-    display: flexbox;
+    height: 800px;
+    display: flex
   }
 
   .contenedorPresentacion{

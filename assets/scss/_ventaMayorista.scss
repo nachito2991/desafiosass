@@ -1,0 +1,55 @@
+.card-title {
+   font-size: 60px;
+   color: black
+   }
+   .desc-prod {
+   font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+  color: black;
+}
+
+
+.contenedor-cotacto{
+
+  height: 350px;
+  text-align: center;
+  border-style: solid;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+.cuerpo-contenedor{
+  $fuente:'Oswald', sans-serif;
+  font-size: 35px;}
+.card-text {
+  $fuente:'Oswald', sans-serif;
+  font-size: 25px;
+}
+.whatsap {
+  @extend .card-text;
+}
+}
+
+
+
+@media (min-width: 1024px) {
+
+  .contenedor-cotacto{
+    width: 1200px;
+    height: 350px;
+    text-align: center;
+    border-style: solid;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-left: 150px;
+    transition-duration: 1s;
+    box-shadow: -1px -5px 14px -2px rgba(0,0,0,0.75);
+  
+  .cuerpo-contenedor{
+    $fuente:'Oswald', sans-serif;
+    font-size: 85px;}
+  .card-text {
+    $fuente:'Oswald', sans-serif;
+    font-size: 40px;
+  }
+  }  
+  }
